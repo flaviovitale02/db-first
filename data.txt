@@ -1,0 +1,33 @@
+Tabel name: cars
+
+id                  INT             NOT_NULL    PRIMARY_KEY(AUTO_INCREMENT_UNIQUE)
+brand               VARCHAR(30)     NOT_NULL    INDEX
+model               VARCHAR(60)     NOT_NULL    INDEX
+year                YEAR            NOT_NULL    INDEX
+fuel_type           VARCHAR(20)     NOT_NULL
+gear_type           VARCHAR(20)     NULL
+condition	        VARCHAR(10)		NULL
+cc                  SMALLINT        NULL        UNSIGNED    INDEX
+kmage			    MEDIUMINT		NOT_NULL    INDEX
+horsepower			SMALLINT		NOT_NULL    UNSIGNED
+cw			        SMALLINT		NOT_NULL    UNSIGNED
+price               FLOAT(9,2)      NOT_NULL    INDEX
+shift_type	        VARCHAR(15)		NOT_NULL
+fuel_type	        VARCHAR(20)		NOT_NULL
+traction	        VARCHAR(15)		NULL
+seats		        TINYINT			NULL        UNSIGNED
+doors		        TINYINT			NULL        UNSIGNED
+owners				TINYINT			NULL        DEFAULT(0)
+cilinder_number	    TINYINT			NULL
+empty_weight		SMALLINT		NULL
+consume				FLOAT(5,2)		NULL
+emission_class		VARCHAR(7)		NULL
+paint_color			VARCHAR(20)		NOT_NULL
+seats_color			VARCHAR(20)		NULL
+interior_color		VARCHAR(20)		NULL
+seller				VARCHAR(50)		NOT_NULL
+seller_location		VARCHAR(50)		NOT_NULL
+seller_phone		VARCHAR(20)		NOT_NULL
+car_location		VARCHAR(20)		NOT_NULL
+description			TEXT			NULL
+car_image			TEXT			NULL
